@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com output</title>
+</head>
+<body>
+    <h2>Primeiro Exemplo de Output</h2>
+    <form action="cadastro.php" method="post" oninput="itotal.value = Number(ipre.value)* Number(iquant.value)">
+        <p><label for="iprod">Produto:</label>
+        <input type="text" name="prod" id="iprod"></p>
+        <p><label for="ipre">Preço: R$</label>
+            <input type="number" name="preco" id="ipre"></p>
+        <p><label for="iquant">Quantidade:</label>
+        <input type="number" name="quant" id="iquant"></p>
+        <p><label for="itotal">Total: R$</label>
+        <output name="tot" id="itotal">0</output></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <h2>Segundo Exemplo de Output</h2>
+    <form action="cadastro.php">
+        <p><label for="inum">Número</label>
+            <input type="range" name="numero" id="inum" min="" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output> <!--O número que vai aparecer ao lado do 'range' é por causa do JS-->
+        </p>
+    </form>
+
+    <h2>Terceiro Exemplo de Output </h2>
+    <form action="cadastro.php" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcidade()">
+            
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
+        </p>
+    </form>
+
+    <script>
+        function calcidade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+
+</body>
+</html>

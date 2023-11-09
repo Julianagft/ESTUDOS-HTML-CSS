@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optgroup e Textarea</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        
+            <select name="estado" id="iest">
+                <option style="text-align: center;" value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Nordeste">
+                    <option value="CE">Ceara</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+                
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+
+            </p>
+
+            <p>
+                    <label for="igenero">Gêneros</label>
+                    <input type="text" name="gene" id="igenero" list="listgeneros">
+                    <datalist id="listgeneros">
+                        <option>Horror</option>
+                        <option>Suspense</option>
+                        <option>Romance</option>
+                        <option>Fantasia</option>
+                        <option>Ficção Ciêntífica </option>
+                    </datalist>
+            </p>
+
+        
+
+    </form>
+</body>
+</html>

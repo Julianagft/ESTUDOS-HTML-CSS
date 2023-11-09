@@ -1,0 +1,5 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(circle, yellow, red, rgb(220, 47, 128) , #289cd3); /*Um gradiente é considerado pelo navegador como se fosse uma imagem*/
+    color: black;
+}

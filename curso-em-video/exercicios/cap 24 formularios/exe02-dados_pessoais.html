@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Dados Pessoais</title>
+</head>
+<body>
+    <h1>Informações sobre o leitor(a)</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset style="width: 350px;">
+            <legend>Dados Pessoais</legend>
+            <p><label for="iname">Nome:</label>
+            <input type="text" name="name" id="iname"></p>
+            <p><label for="imail">E-mail:</label>
+            <input type="email" name="email" id="imail"></p>
+            <p><label for="itel">Telefone:</label>
+            <input type="tel" name="telefone" id="itel" autocomplete="tel" placeholder="(xx) xxxxx-xxxx"></p>
+        </fieldset>
+    </form>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset style="width: 350px">
+            <legend>Sexo:</legend>
+            <p><input type="radio" name="sexo" id="ifem">
+                <label for="ifem">Feminino</label></p>
+            <p><input type="radio" name="sexo" id="imasc">
+                <label for="imasc">Masculino</label></p>
+            <p><input type="radio" name="sexo" id="inaoinf">
+                <label for="inaoinf">Não desejo informar</label></p>
+        </fieldset>
+        <fieldset style="width: 350px">
+            <legend>Gêneros Favoritos:</legend>
+            <p> <input type="checkbox" name="horror" id="ihorror">
+            <label for="ihorror">Horror</label></p>
+            <p><input type="checkbox" name="suspense" id="isusp">
+            <label for="isusp">Suspense</label></p>
+            <p><input type="checkbox" name="drama" id="idrama">
+            <label for="idrama">Drama</label></p>
+            <p><input type="checkbox" name="dramaf" id="idramaf">
+            <label for="idramaf">Drama Familiar/Adulto</label></p>
+            <p><input type="checkbox" name="romance" id="iromance">
+            <label for="iromance">Romance</label></p>
+            <p><input type="checkbox" name="cientifica" id="icienc">
+            <label for="idramaf">Ficção Cientifica</label></p>
+            <p><input type="checkbox" name="distopia" id="idist">
+            <label for="idist">Distopias</label></p>
+            <p><input type="checkbox" name="fantasia" id="ifant">
+            <label for="ifant"></label>Fantasia</p>
+            <p><input type="checkbox" name="crime" id="icrime">
+            <label for="icrime">True Crime</label></p>
+            <p><input type="checkbox" name="nfic" id="infic">
+            <label for="infic">Não Ficção</label></p>
+        </fieldset>
+        <p><input type="submit">
+        <input type="reset" value="Limpar"></p>
+    </form>
+</body>

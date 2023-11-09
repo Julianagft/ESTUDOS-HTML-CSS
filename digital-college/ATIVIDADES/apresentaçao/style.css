@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f3bc82;
+    font-family: cursive;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+
+  header {
+    font-family: 'ABeeZee', sans-serif;
+    background-image: linear-gradient(to right, #fc9931, #ee81fe, #f3a713);
+    min-height: 150px;
+    text-align: center;
+}
+
+
+  main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.22);
+
+  }
+
+  main p {
+    text-align: justify;
+    text-indent: 20px;
+    margin: 15px 0px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+ul {  
+    list-style-type: '\1F539\0020\0020';
+    list-style-position: inside;
+}
+
+aside{
+    background-color: #F3BC82;
+    padding: 23px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+h3 {
+    text-align: center;
+
+}
+
+table {
+    width: 100%;
+}
+  h1 {
+    color: black;
+    font-size: 2em;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 200px;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: justify;
+  }
+
+  th {
+    color: red;
+    text-align: center;
+  }
+
+  caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #ec99405a;
+    padding: 10px;
+    margin: 0px -1px;
+  }
+
+  .titulo {
+    color: rgb(87, 9, 159);
+  }
+
+  .numero{
+    text-align: right;
+  }
+
+  #primeiro {
+    margin: 0px;
+  }

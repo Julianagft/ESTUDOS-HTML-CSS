@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.container {
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*Criei tres colunas. Podemos inclusive misturar unidades de medias */
+/*No lugar de ': 1fr 1 fr 1fr;' utilizei a notação 'repeat(3, 1fr);*/
+    grid-auto-rows: 100px;
+
+
+}

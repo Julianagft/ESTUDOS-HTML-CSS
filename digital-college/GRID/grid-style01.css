@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+:root{
+    --gutter-width:114rem;
+    --espaco-vertical: 8rem;
+    --espaco-horizontal: 6rem;
+}
+
+html {
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+.linha{
+    max-width:var(--gutter-width); /* = (1140px) Um dos standarts que estão sendo usados hoje em dia */
+    background-color: #eee;
+    margin: 0 auto;
+    }
+
+.linha:not(:last-child){
+    margin-bottom: var(--espaco-vertical);
+}/*Seleciona tudo EXCETO  o ultimo filho*/
+
+/*Também pode ria ter feito o seguinte:
+
+    .linha:last-child{
+        margin-bottom: 0;
+    } */
+
+/*MECANISMO PARA EVITAR REPETIÇÕES DESNECESSÁRIAS*/
+
+[class^="col-"]{
+    background-color: orangered;
+    float: left;
+}
+
+[class^="col-"]:not(:last-child){
+    margin-right: var(--espaco-horizontal);
+}
+/*O seletor CSS [class^="col-"] é usado para direcionar elementos HTML cujo atributo class começa com "col-". Isso é um exemplo de seletor de atributo em CSS e é muito útil quando você deseja selecionar elementos que seguem um padrão de nomeação de classe específico.
+
+Neste exemplo, qualquer elemento HTML com uma classe que começa com "col-" terá um fundo laranja, float:left e tbm as configurações definidas na pseudo classe :not() */
+
+
+/* TÉCNICA CLEARFIX */
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Como estamos usando float a linha fica com 0px de altura, para concertar isso utilizamos o clearfix*/
+
+/*A classe "clearfix" é uma classe CSS comumente usada para resolver problemas de clearfix em elementos HTML, como divs ou contêineres, quando eles contêm elementos filhos que foram flutuados (float). 
+
+A técnica clearfix é usada para garantir que o elemento pai se expanda adequadamente para envolver seus filhos flutuantes, evitando que ele "quebre" ou tenha uma altura incorreta.*/
+
+/*
+::after: Isso cria um pseudo-elemento após o elemento com a classe "clearfix".
+
+content: "": Define o conteúdo do pseudo-elemento como uma string vazia.
+
+display: table: Isso é usado para criar um novo contexto de formatação, permitindo que o elemento "clearfix" envolva seus filhos flutuantes.
+
+clear: both: Isso garante que o elemento "clearfix" seja posicionado abaixo de quaisquer elementos flutuantes à esquerda e à direita. Em outras palavras, ele limpa os flutuantes.*/
+
+.col-1-de-2{
+    width: calc((100% - var(--espaco-horizontal)) / 2);
+    background-color: orangered;
+    float: left; /*Só pq estamos usando float, acredito que com flex não precisaria.*/
+
+    /*Só deixei essas config de backgroud e etc para demonstrar que utilizei elas no seletor [] já que vão se repetir em todas as colunas*/
+}
+
+.col-1-de-2:not(:last-child){
+    margin-right: var(--espaco-horizontal);
+} /*Pra conseguirmos ver o gutter*/ /*Mesma coisa que encima, conf repetida, ficou apenas para fins de demonstração, já que foi a primeira*/
+
+.col-1-de-3{
+    width: calc((100% - 2 * var(--espaco-horizontal)) / 3) ;
+    
+}/*100% do espaço - duas vezes o tamanho do gutter (já que são dois gaps)  / por tres colunas */
+
+.col-2-de-3{
+    width: calc(2 * ((100% - 2 * var(--espaco-horizontal)) /3 /*equivale a largura de uma coluna*/) + var(--espaco-horizontal));
+}
+/*uma coluna + uma coluna = (2* largura da coluna) + espaço horizontal*/
+
+.col-1-de-4 {
+    width: calc((100% - 3 * var(--espaco-horizontal)) / 4);
+}
+
+.col-2-de-4 {
+    width: calc(2 * ((100% - 3 * var(--espaco-horizontal)) / 4) + var(--espaco-horizontal));
+}
+
+.col-3-de-4 {
+    width: calc(3 * ((100% - 3 * var(--espaco-horizontal)) / 4) + 2 * var(--espaco-horizontal));
+}
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalisação de Colunas</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        table{
+            width: 600px; 
+            padding: 10px;
+            
+        }
+
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px
+            
+        }
+
+        .col1{
+           background-color: cadetblue; 
+        }
+        .col2{
+            background-color: green;
+        }
+        .col3{
+            background-color: orange;
+        }
+
+        .col4{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1A</td>
+            <td>1B</td>
+            <td>1C</td>
+            <td>1D</td>
+            <td>1E</td>
+        </tr>
+        <tr>
+            <td>2A</td>
+            <td>2B</td>
+            <td>2C</td>
+            <td>2D</td>
+            <td>2E</td>
+        </tr>
+        <tr>
+            <td>3A</td>
+            <td>3B</td>
+            <td>3C</td>
+            <td>3D</td>
+            <td>3E</td>
+        </tr>
+        <tr>
+            <td>4A</td>
+            <td>4B</td>
+            <td>4C</td>
+            <td>4D</td>
+            <td>4E</td>
+        </tr>
+
+        <colgroup>
+            <col class="col1">
+            <col class="col2" span="2">
+            <col class="col3">
+            <col class="col4">
+        </colgroup>
+    </table>
+
+    
+</body>
+</html>

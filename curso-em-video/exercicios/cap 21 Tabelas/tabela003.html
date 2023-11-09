@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclando Celulas</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table{
+            width: 600px; 
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px 10px 5px 10px;
+            
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de mesclagem de células</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="larg2">Grupo</th>
+                <th class="largura">Nomes</th>
+                <th colspan="3">Filmes Favoritos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="larg2" rowspan="3">Mulheres</th>
+                <td class="largura">Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td class="largura">Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td class="largura">Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th class="larg2" rowspan="3">Homens</th>
+                <td class="largura">Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td class="largura">Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td class="largura">Fabiano Mota</td>
+                <td>Star Wars Episódio V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            
+
+        </tbody>
+    </table>
+</body>
+</html>

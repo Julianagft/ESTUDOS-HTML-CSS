@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'magic';
+    src: url('fontes/Wonder\ Magic\ Free\ Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+:root{
+    --fonte1: 'magic';
+    --fonte2: 'Nunito Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+article{
+    background-color: antiquewhite;
+    font-family: var(--fonte2);
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 30px;
+
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
+    min-width: 300px;
+    max-width: 1000px;
+    height: 80vh;
+    
+    
+}
+
+article h1{
+    font-family: var(--fonte1);
+    text-align: center;
+    font-size: 2em;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+span{
+    color: rgba(0, 0, 255, 0.548);
+    display: inline-block;
+    
+}

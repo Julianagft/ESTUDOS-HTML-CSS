@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input, label{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <label for="ifoto">Foto do perfil:</label>
+        <input type="file" name="foto" id="ifoto" accept="image/*"><br>
+        <label for="iidade">Idade:</label>
+        <input type="number" name="idade" id="iidade" min="1" max="120">
+        <br>
+        <p><fieldset style="width: 150px;">
+                <legend>Sexo</legend>
+                <input type="radio" name="sex" id="isexmasc">
+                <label for="isexmasc">Masculino</label>
+                <input type="radio" name="sex" id="isexfem">
+                <label for="isexfem">Feminino</label>
+                <input type="radio" name="sex" id="isexnident">
+                <label for="isexnident">Não informar</label>
+        </fieldset></p>
+        <label for="itel">Telefone:</label>
+        <input type="tel" name="telefone" id="itel" placeholder="(xx)xxxxx-xxxx"> <br>
+        <label for="imail">E-mail:</label>
+        <input type="email" name="mail" id="imail" size="30" maxlength="50"><br>
+        <label for="">Senha</label>
+        <input type="password" name="senha" id="senha" minlength="8"> <br>
+        <label for="imes">Mês de aniversário</label>
+        <input type="month" name="mes" id="imes"><br>
+        <label for="idata">Dia da compra</label>
+        <input type="date" name="data" id="idata"><br>
+        <label for="ihora">Hora da compra</label>
+        <input type="time" name="hora" id="ihora"><br>
+        <label for="icor">Cor</label>
+        <input type="color" name="cor" id="icor" ><br>
+        <label for="isat">Nível de Satisfação</label>
+        <input type="range" name="sat" id="isat" min="0" max="10"><br>
+        <label for="iaceito">Aceito os <a href="">termos de uso</a></label>
+        <input type="checkbox" value=""><br>
+        <input type="submit" name="" id="" value="enviar">
+        <input type="reset" value="limpar" name="" id="">
+
+
+    </form>
+</body>
+</html>

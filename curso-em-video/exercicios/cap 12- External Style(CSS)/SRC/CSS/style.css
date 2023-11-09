@@ -1,0 +1,21 @@
+@charset "UTF-8";
+body{
+    background-color: cornsilk;
+    font-family: cursive;
+    font-size: 12pt;
+}
+
+h1{
+    font-size: 1.5em;
+    color: rgb(209, 45, 78);
+    background-color: rgb(229, 173, 83);
+    text-decoration: underline;
+}
+
+h2{
+    font-size: 1.3em;
+    color: coral;
+}
+p{
+    text-align: justify;
+}

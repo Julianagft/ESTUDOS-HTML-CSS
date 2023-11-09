@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+
+        body{
+            margin: auto;
+            padding: 53px;
+        }
+        input {
+            padding: 3px;
+            margin: 9px;
+        }
+
+        label{
+            padding: 3px;
+            margin: 9px;
+            color: rgba(33, 156, 156, 0.682);
+        
+        }
+
+        button{
+            padding: 3px;
+            margin: 9px;  
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" method="post"> <!--Method 'post' é para que o navegador não exponha o usuário-->
+        <label  for="nome"><strong>NOME</strong></label>
+        <br>
+        <input id="nome" type="text" placeholder="Escreva seu nome">
+        <br>
+        <label  for="data"><strong>DATA DE NASCIMENTO</strong></label>
+        <br>
+        <input id="data" type="date" placeholder=" Escreva sua data de nascimento" value="1995-05-29"> <!--Para cadastrar uma data como valor padrão precisamos colocar na ordem: 'ANO', 'MES' e 'DIA'-->
+        <br>
+        <label  for="idade"><strong>IDADE</strong></label>
+        <br>
+        <input id="idade" type="number" placeholder="Escreva sua idade">
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+ 
+    </form>
+
+</body>
+</html>

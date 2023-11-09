@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* MEDIA QUERIES */
+
+/* Tipical Device Break Points
+Pequenas Telas: até 600px;
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992 px até 1200px
+Grandes Telas: acima de 1200px */
+
+@media screen and (min-width: 768px){
+    #burger{
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    }
+
+    main{
+        width: 55vw;
+    }
+}
+
+/*Não preciso criar todos os media types  basta definir o mínimo tamanho que eu quero para que a minha configuração funcione*/

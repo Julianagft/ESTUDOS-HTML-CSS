@@ -1,0 +1,57 @@
+@charset "UTF-8";
+body{
+    padding-bottom: 500px; /*Aqui foi apenas para conseguir trabalhar com o conteúdo centralizado na tela*/
+}
+.container {
+    background-color: antiquewhite;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ 
+.item {
+    background-color: cadetblue;
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+}
+
+.box {
+    background-color: cadetblue;
+    border: 2px solid blue;
+    height: 50px;
+    /*flex-basis: 30px; Eu estou "dizendo" para o FLEX que eu quero que o elemento tenha como base 30px de largura. Meu elemento não diminuirá menos que 30px!*/
+    flex: 1 1 50px; /*SORTHAND ( grow, shrink, basis nessa ordem)*/
+}
+
+/*
+#item1{ Basicamente disse ao flex que quero que o elemento 1 ocupe sozinho metade do box e a outra metade seja ocupada igualmente pelos elementos 2 e 3
+    flex-grow: 2;
+}
+
+#item2{
+    flex-grow: 1;
+}
+
+#item3{
+    flex-grow: 1;
+}
+*/
+
+#item1{
+    order: 3;
+}
+
+#item2{
+    order: 1;
+    align-self: end; /*Permite que o alinhamento padrão (ou o que estiver definido por 'align-items') seja sobrescrito para ítens individuais. */
+}
+
+#item3{
+    order: 2;
+}

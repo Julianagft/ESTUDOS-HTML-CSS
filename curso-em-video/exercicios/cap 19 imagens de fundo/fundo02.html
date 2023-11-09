@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições em Background</title>
+<style>
+    div { 
+            width: 90%;
+            height: 400px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+
+    #area1{
+        background-image: url(imagens/pattern001.png);
+        background-repeat: repeat;
+    }
+    #area2{
+        background-image: url(imagens/pattern002.png);
+        background-repeat: repeat-x;
+    }
+    #area3{
+        background-image: url(imagens/pattern003.png);
+        background-repeat: repeat-y;
+    }
+    #area4{
+        background-image: url(imagens/pattern004.png);
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body>
+    <h1>Repetições em background-image</h1>
+
+    <h2>background-repeat: repeat;</h2>
+    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
+    <div id="area1"></div>
+    <h2>background-repeat: repeat-x;</h2>
+    <p>Repete apenas no eixo horizontal.</p>
+    <div id="area2"></div>
+    <h2>background-repeat: repeat-y;</h2>
+    <p>Repete apenas no eixo vertical.</p>
+    <div id="area3"></div>
+    <h2>background-repeat: no-repeat;</h2>
+    <p>Não repete em nenhum eixo. A imagem só é carregada uma única vez.</p>
+    <div id="area4"></div>
+
+    <p>Vá para o próximo exemplo <a href="fundo03.html">AQUI</a>!</p>
+    <p>Volte para a página principal <a href="index.html">AQUI</a>!</p>
+</body>
+</html>

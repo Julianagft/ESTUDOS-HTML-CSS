@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse ;
+            width: 300px;
+            text-align: center;
+
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .cor1{
+            background-color: coral;
+        }
+
+        .cor2{
+            background-color: bisque;
+        }
+
+       .cor3 {
+            background-color:  rgb(221, 221, 201);
+        }
+
+        .linhacor{
+            background-color:  rgba(255, 127, 80, 0.461);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+
+    <!--
+        HIERARQUIA DE TABELA SIMPLES
+          TABLE ROW <tr>= Linha de Tabela;
+            TABLE HEADER <th>= Cabeçalho de Tabela;
+                TABLE DATA <td>= Dado de Tabela;
+    -->
+
+    <table>
+        <tr class="linhacor"> <!--Primeira Linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!--Segunda Linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="linhacor"> <!--Terceira Linha Linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!--Quarta Linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+
+    </table>
+<br>
+    <table>
+        <tr class="cor1">
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+        </tr>
+        <tr>
+            <td class="cor2">Ovos</td>
+            <td class="cor3">3,00</td>
+            <td class="cor3">oito</td>
+        </tr>
+        <tr>
+            <td class="cor2">Leite</td>
+            <td class="cor3">5,00</td>
+            <td class="cor3">Dois</td>
+        </tr>
+        <tr>
+            <td class="cor2">Arroz</td>
+            <td class="cor3">5,50</td>
+            <td class="cor3">Três</td>
+        </tr>
+    </table>
+</body>
+</html>

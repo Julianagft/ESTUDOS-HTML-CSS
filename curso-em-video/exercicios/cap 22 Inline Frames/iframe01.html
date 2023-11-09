@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        iframe{
+            width: 500px;
+            height: 500px;
+            border: 5px solid black;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.55);
+        }
+
+        /*Por padrão, o tamanho de um Iframe é de 300x150 px, porém podemos alterar isso com CSS (Sempre prevalecerá sobre as configurações de HTML)*/
+    </style>
+</head>
+<body>
+    <h1>Teste de Iframe</h1>
+    <p>Acesse o site <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+    e faça muitos cursos!
+    </p>
+
+    <h1>Teste de Iframe</h1>
+    <p>Acesse o site <iframe src="https://www.cursoemvideo.com" frameborder="0" width="500" height="300" scrolling="auto">
+        [Seu navegador não suporta Iframes]
+    </iframe>
+    e faça muitos cursos!
+    </p>
+
+    <br>
+
+    <iframe srcdoc="<h2> Teste de Título</h2> <p>Este documento foi gerado dinamicamente</p> <img src='/imagens/cursoemvideo.png'>" frameborder="0" width="500px" height="400px">
+        <p>Seu navegador não é compatível com a exibição desse recurso.</p>
+    </iframe>
+</body>
+</html>

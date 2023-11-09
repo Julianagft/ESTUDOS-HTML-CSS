@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    display: grid;
+
+    grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+
+    gap: 1rem;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 100vh auto;
+}
+
+.o-header, .o-aside, .o-main, .o-footer {
+    background-color: purple;
+    color: #FDFDFD
+}
+
+.o-header {
+    grid-area: header;
+}
+
+.o-aside {
+    grid-area: aside;
+}
+
+.o-main {
+    grid-area: main;
+}
+
+.o-footer {
+    grid-area: footer;
+}
+

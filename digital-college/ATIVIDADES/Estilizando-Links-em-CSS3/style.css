@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+    header {
+    background-image: linear-gradient(to bottom, #025373, #024873);
+    color: white;
+    font-size:  1.6em;
+    min-height: 150px;
+    text-align: center;
+    padding: 25px;
+    margin: -20px 32px 0px px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    
+}
+
+header > h1 {
+   margin-top: 30px;
+   font-family: 'Bebas Neue', cursive;
+   font-weight: normal;
+ 
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main > article {
+    padding: 20px;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em; 
+    margin: 15px 0px;
+    font-size: 1em;
+}
+
+main h2{
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right,#024873, #025373, transparent);
+    color: white;
+    
+}
+
+main h3{
+    font-size: 1.2em;
+    margin-top: 20px;
+    background-image: linear-gradient(to right,#F2B035, transparent);
+    font-weight: bold;
+    
+}
+
+main h4 {
+    font-size: 1.1em;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: #D97904;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #024873;
+}
+
+main div {
+    text-align: center;
+    color: rgb(255, 47, 0);
+    font-weight: bold;
+}
+
+div p {
+    display: none;
+    color: blue;
+    font-weight: normal;
+}
+
+div:hover > p{
+    display: block;
+    background-color: rgb(9, 255, 0);
+}
+
+#surpresa {
+    text-align: center;
+}
+
+#ex1:hover{
+    background-color: rgb(240, 26, 229);
+    color: white;
+    font-weight:normal;
+    text-decoration: underline;
+}
+
+#ex2:visited{
+    text-decoration: underline;
+    color: rgb(100, 128, 0);
+}
+
+#ex3:focus{
+    color: orangered;
+    text-decoration: underline;
+}
+
+.externo:hover{
+    background-color: beige;
+    text-decoration: underline;
+    color: purple;
+
+}
+
+.externo::after{
+    content:'\00A0\1F517';
+}
+
+footer {
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    background-image: linear-gradient(to bottom, #025373, #024873);
+    color: white;
+    padding: 1px;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    
+}
